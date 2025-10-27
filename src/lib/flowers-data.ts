@@ -4,7 +4,7 @@ export interface Flower {
   description: string
   price: number
   image: string
-  category: "roses" | "tulips" | "lilies" | "seasonal" | "mixed"
+  category: "roses" | "tulips" | "lilies" | "hydrangeas" | "seasonal" | "mixed"
   color: string[]
   inStock: boolean
 }
@@ -117,6 +117,46 @@ export const flowers: Flower[] = [
     price: 3.49,
     image: "/lavender-flowers-bouquet.jpg",
     category: "seasonal",
+    color: ["purple"],
+    inStock: true,
+  },
+  {
+    id: "hydrangea-blue",
+    name: "Blue Hydrangeas",
+    description: "Stunning blue hydrangeas for grace and abundance",
+    price: 6.99,
+    image: "/blue-hydrangea-flowers-bouquet.jpg",
+    category: "hydrangeas",
+    color: ["blue"],
+    inStock: true,
+  },
+  {
+    id: "hydrangea-pink",
+    name: "Pink Hydrangeas",
+    description: "Romantic pink hydrangeas symbolizing heartfelt emotions",
+    price: 6.99,
+    image: "/pink-hydrangea-flowers-bouquet.jpg",
+    category: "hydrangeas",
+    color: ["pink"],
+    inStock: true,
+  },
+  {
+    id: "hydrangea-white",
+    name: "White Hydrangeas",
+    description: "Pure white hydrangeas for elegance and grace",
+    price: 6.99,
+    image: "/white-hydrangea-flowers-bouquet.jpg",
+    category: "hydrangeas",
+    color: ["white"],
+    inStock: true,
+  },
+  {
+    id: "hydrangea-purple",
+    name: "Purple Hydrangeas",
+    description: "Rich purple hydrangeas for deep understanding and abundance",
+    price: 6.99,
+    image: "/purple-hydrangea-flowers-bouquet.jpg",
+    category: "hydrangeas",
     color: ["purple"],
     inStock: true,
   },
