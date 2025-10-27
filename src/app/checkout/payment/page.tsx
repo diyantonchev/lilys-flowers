@@ -13,7 +13,7 @@ const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!
 export default function PaymentPage() {
   const { items, total } = useCart()
   const router = useRouter()
-  const [pickupDetails, setPickupDetails] = useState<any>(null)
+  const [pickupDetails, setPickupDetails] = useState<{ name: string; email: string; pickupDate: string; pickupTime: string } | null>(null)
 
   useEffect(() => {
     // Load pickup details from localStorage

@@ -85,7 +85,7 @@ export default function BuilderPage() {
       id: `custom-${Date.now()}`,
       name: customBouquetName,
       price: totalPrice,
-      image: selectedFlowers[0].flower.image,
+      image: selectedFlowers[0]?.flower.image ?? "/placeholder.svg",
       type: "custom",
     })
 
