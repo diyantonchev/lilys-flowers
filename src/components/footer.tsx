@@ -36,6 +36,11 @@ export function Footer() {
                   About Us
                 </Link>
               </li>
+              <li>
+                <Link href="/contact" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -61,9 +66,9 @@ export function Footer() {
               <li className="flex items-start gap-2 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4 mt-0.5 text-primary" />
                 <span>
-                  123 Blossom Street
+                  123 Tsar Boris III Blvd
                   <br />
-                  Garden City, GC 12345
+                  Plovdiv 4000, Bulgaria
                 </span>
               </li>
               <li className="flex items-start gap-2 text-sm text-muted-foreground">
